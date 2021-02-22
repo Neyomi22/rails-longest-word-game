@@ -1,0 +1,12 @@
+
+<h1>Result</h1>
+<p><%= params["input"] %></p>
+  <%if @results %>
+     <p><%= "Congratulations!#{params["input"].upcase} is a valid English word" %></p>
+   <%else %>
+     <p><%= "Sorry but #{params["input"].upcase} doesn not seem to be a valid English word.." %></p>
+  <% end %>
+  <%= link_to "Play Again", :new %>
+  
+
+
